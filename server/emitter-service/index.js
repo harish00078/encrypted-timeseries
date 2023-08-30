@@ -5,7 +5,7 @@ const crypto = require('crypto');
 const fs = require('fs');
 
 const data = JSON.parse(fs.readFileSync('data.json'));
-const passKey = 'your-pass-key'; // Replace with your pass key
+const passKey = 'blahsomething'; // Replace with your pass key
 
 const server = net.createServer((socket) => {
   setInterval(() => {

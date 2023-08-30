@@ -1,8 +1,8 @@
 // listener.js
-
 const express = require('express');
 const cors = require('cors'); // Import the cors package
 const app = express();
+
 const net = require('net');
 const crypto = require('crypto');
 const mongoose = require('mongoose');
@@ -53,8 +53,8 @@ const server = net.createServer((socket) => {
     }
   });
 });
-app.use(cors()); // Enable CORS for all routes
 
+app.use(cors()); // Enable CORS for all routes
 
 app.get('/api/data', async (req, res) => {
   try {
